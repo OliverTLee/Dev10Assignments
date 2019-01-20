@@ -1,0 +1,26 @@
+
+/* Name: Oliver Lee
+Date Created: 1/14/2019
+Most recent revision: 1/14/2019 
+Main.css for Oliver Lee portfolio*/
+header, footer { background-color: #80bfff;			/* header background color is sky blue */
+		color: #0d1f2d;  					/* header font is black */ 
+		height: 100px;
+		text-align: center;
+		padding: 30px 10px 20px 10px;}
+		
+h1 { font-size: 2.5em;}
+
+nav { border-top: 3px dashed #546a7b;
+border-bottom: 3px dashed #546a7b; 
+margin-top: 4px;}
+
+body {background-color: #d9e6fc;   			/* background color is light blue */
+		font-family: arial, helvetica, sans-serif;
+		color: #0d1f2d 					/* font is black */
+		max-width: 900px;
+margin: 0 auto; }
+.clear-float {.clear:both;} <!-- This prevents overlap of left-right formatting -->
+article img {float:left;}
+
+

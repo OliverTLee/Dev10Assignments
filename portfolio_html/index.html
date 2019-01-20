@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <!-- Name: Oliver Lee
 Date Created: 1/3/2019
-Most recent revision: 1/4/2019 -->
+Most recent revision: 1/14/2019 -->
 <html lang="en">
 <html>
  <head>
    <title> "Oliver's Portfolio" </title>
+   <link href="styles/main.css" rel="stylesheet" type="text/css" />
+   <style>
+	caption {font-weight: bold;
+			font-size: 1.2em; 
+			margin-bottom: 8 px;}
+	table, th, td {border: 1px solid #0d1f2d;
+					border-collapse: collapse;
+					padding: 5px 10px;}
+	table {width: 90%;
+			margin: auto;}
+	tr {height:30px;} 
+	th {background-color: #80bfff;} 	/* This is a blue */
+	tr:nth-child(odd) {background-color: #ffe6b3;} /* This is a light orange */
+
+   </style>
  </head>
+ 
+ 
  <body>
    <header>
      <h1> Portfolio for Oliver Lee </h1>
    </header>
 
-   <nav>
-   <hr />
+   <nav class="border">
      <p>
      <a href="projects.html">Projects</a> <a href="testimonials.html">Testimonials</a>  <a href="contact.html">Contact</a>
      </p>
-   <hr />
    </nav>
 
    <section>
-     <article id="about_me">
+     <article class="border" id="about_me">
        <h2><em> About Me </em></h2>
-	   <img src="images/portrait.jpg" alt="potrait stock photo man" height="400"/>
+	   <img src="images/portrait.jpg" alt="potrait stock photo man" height="400";/>
        <p>            
          I am a recent graduate of the <strong>University of Minnesota </strong>, with a bachelor's degree in Bioproducts and Biosystems Engineering, with a minor in chemistry.
 
@@ -31,6 +46,7 @@ Most recent revision: 1/4/2019 -->
        <p>
          Coding and software development has become an interest of mine as I have come to realize that computers are the new frontier of human development. New systems are implemented into our lives every year, that automate our lives. New products are controlling our houses heating, updating our grocery lists, suggesting friends we haven't seen since middle school, and (hopefully) soon driving our cars. The sky is the limit, and I want to be a part of it.
        </p>
+	   <div class="clear-float"></div>
      </article>
 
      <article id="past_experiences">
@@ -38,11 +54,17 @@ Most recent revision: 1/4/2019 -->
 	   <img src="images/warren_dock.jpg" alt="a sunny day on Lake Half-moon" width="400"/>
        <table>
 	   <caption>Employment History</caption>
-	   <tr>   <th>Years of employment</th> <th>Title</th> <th>Company</th> </tr>
-	   <tr> <td>2018-2019</td> <td>Quality Assurance Technician</td> <td>Lube Tech</td>
-	   <tr> <td>2018 </td> <td> Program Coordinator </td> <td>YMCA Camp Warren </td>
-	   <tr> <td>2015-2018</td> <td> Student </td> <td> University of Minnespota </td>
+	   
+	   <thead>
+		<tr>   <th>Years of employment</th> <th>Title</th> <th>Company</th> </tr>
+	   </thead>
+	   <tbody>
+		   <tr> <td>2018-2019</td> <td>Quality Assurance Technician</td> <td>Lube Tech</td> </tr>
+		   <tr> <td>2018 </td> <td> Program Coordinator </td> <td>YMCA Camp Warren </td> </tr>
+		   <tr> <td>2015-2018</td> <td> Student </td> <td> University of Minnespota </td> </tr>
+		</tbody>
 	   </table>
+	 <div class="clear-float"></div>
      </article>
 
      <article id="hobbies">
@@ -77,15 +99,11 @@ Most recent revision: 1/4/2019 -->
 				<li>Bird Watching</li>
 			</ul>
 		</ul>
-		
-		   
-	   
-	   
+	 <div class="clear-float"></div>
      </article>
    </section>
 
    <footer>
-     <hr />
    <p> &copy; Oliver Lee 2018. All rights reserved.</p>
    </footer>
 

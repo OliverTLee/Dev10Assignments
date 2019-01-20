@@ -1,0 +1,34 @@
+/* This is CSS, that mostly* overrides bootstrap */
+
+
+
+
+body {background-color: #4fb4c6;}
+a {color: #453591; text-decoration: underline; }
+a:hover {color: #453591; text-decoration: underline,bold; }
+a:active {color: #453591; text-decoration: none }
+a:visited { color: #9e85a0; text-decoration:underline; }
+h1 { color: #453591; }
+
+
+@font-face {
+    font-family: 'spongeboy_me_bobregular';
+    src: url('fonts/spongeboy-webfont.woff2') format('woff2'),
+         url('fonts/spongeboy-webfont.woff') format('woff');
+    font-weight: normal;
+font-style: normal;}
+h1, h2, h3, .jumbotron, footer {font-family: 'spongeboy_me_bobregular';}
+
+
+footer { 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #3c92a3;
+}
+/* These are the colors used 
+#453591; - dark/navy blue
+#9e85a0  - lilac/lavender
+#4fb4c6 - ocean teal 
+
+*/

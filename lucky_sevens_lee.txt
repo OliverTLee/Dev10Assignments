@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>(un)Lucky Sevens Lee </title>
+   <style>
+     body {text-align: center;
+           font-family: comic sans MS, arial;
+           }
+     .hidden {display: none;}
+     .unhidden {display:inline-block;}
+     td, th {border: 1px solid black}
+   </style>
+   <script>
+     //rolldice and playgame are two helper functions 
+     function rolldice() {
+       return(Math.floor(Math.random()*6)+1);
+     }
+
+     function playgame(bet) {
+       var dice = rolldice()+rolldice();
+       if (dice == 7) {
+         return(bet+4)
+       }
+       else {
+         return(bet-1)
+       }
+     }
+     function run_game() {
+
+       // This is done to unhide the bottom block when running //
+       var item = document.getElementById("output");
+       item.className="unhidden"
+       var two= 2
+       // This is both the meat, and the potatoes of the script.
+       var my_bet = document.getElementById("starting_bet").value;
+       if (my_bet >0 && my_bet <100000) {
+         var maximum = my_bet
+         var turn_max = 0
+         var rolls_played = 0
+         while (my_bet > 0) {
+           my_bet = playgame(my_bet);
+           rolls_played ++
+           if (my_bet > maximum) {
+             maximum = my_bet
+             turn_max = rolls_played
+           }
+         }
+       document.getElementById("start_bet").innerText = "$" + document.getElementById("starting_bet").value;
+       document.getElementById("rolls_played").innerText =rolls_played
+       document.getElementById("maximum").innerText ="$" + maximum
+       document.getElementById("turn_max").innerText =turn_max
+       document.getElementById("my_button").innerHTML="Play Again" 
+       }
+       // If the input is bad, we tell them to make it good.
+       else {
+         document.getElementById("start_bet").innerText ="Enter"
+         document.getElementById("rolls_played").innerText ="A"
+         document.getElementById("maximum").innerText ="Positive"
+         document.getElementById("turn_max").innerText ="Number"
+         document.getElementById("my_button").innerHTML="Play Again"
+       }
+     }
+ </script>
+ </head>
+
+ <body>
+     <header> <h1> Lucky Sevens </h1> </header>
+   <!-- This section is the input section, with the button that runs the game -->
+   <div>
+     <p> Starting bet: <input type="text" id="starting_bet" name="starting_bet" placeholder="Enter a Positive Number"/>
+     <br/>
+     <button onclick="run_game()" id="my_button";">Play </button>
+   </div>
+
+   <!-- This section is the hidden results table -->
+   <div name="output" class="hidden" id="output">
+     <hr /> <!-- This horizontal rule is vital to the layout of the page, without it, a user doesn't know how to tell the input and the output apart. -->
+     <h1> Results </h1>
+
+     <table id="results">
+       <tr>
+         <th> Starting Bet </th>
+         <th> <span id="start_bet"></span> </th>
+       </tr>
+       <tr>
+         <td> Total Rolls Before Going Broke </td>
+         <td> <span id="rolls_played"></span> </td>
+       </tr>
+       <tr>
+         <td> Highest Amount Won </td>
+         <td> <span id="maximum"></span> </td>
+       </tr>
+       <tr>
+         <td> Turn Count at Highest Amount Won   </td>
+         <td> <span id="turn_max"></span> </td>
+       </tr>
+     </table>
+   </div>
+ </body>
+</html>
+
