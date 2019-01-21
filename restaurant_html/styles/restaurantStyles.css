@@ -1,8 +1,5 @@
 /* This is CSS, that mostly* overrides bootstrap */
 
-
-
-
 body {background-color: #4fb4c6;}
 a {color: #453591; text-decoration: underline; }
 a:hover {color: #453591; text-decoration: underline,bold; }
@@ -30,5 +27,5 @@ footer {
 #453591; - dark/navy blue
 #9e85a0  - lilac/lavender
 #4fb4c6 - ocean teal 
-
+3c92a3 - Dark blue for the footer
 */

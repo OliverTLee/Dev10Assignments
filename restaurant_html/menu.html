@@ -1,166 +1,162 @@
 <!DOCTYPE html>
 <!-- Name: Oliver Lee
-Date Created: 1/7/2019
-Most recent revision: 1/7/2019 -->
+   Date Created: 1/7/2019
+   Most recent revision: 1/7/2019 -->
 <html lang="en">
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width = device-width, initial-scale = 1">
-<title> Galley Grub </title>   
-<style>
-.jumbotron { background-image: url("images/spongeSky.jpg");
-				background-size: cover;}
-.javascript_enabled { Display: none;}
-@font-face {
-    font-family: 'spongeboy_me_bobregular';
-    src: url('fonts/spongeboy-webfont.woff2') format('woff2'),
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width = device-width, initial-scale = 1">
+      <title> Galley Grub </title>
+      <style>
+         .jumbotron { background-image: url("images/spongeSky.jpg");
+         background-size: cover;}
+         .javascript_enabled { Display: none;}
+         @font-face {
+         font-family: 'spongeboy_me_bobregular';
+         src: url('fonts/spongeboy-webfont.woff2') format('woff2'),
          url('fonts/spongeboy-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal; }
-h1, strong, .jumbotron {font-family: 'spongeboy_me_bobregular';}
-</style>   
-<!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
-	<link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!-- This provides the home button -->
-</head>
-
-<body onload="javascript_check()">
-<div class="jumbotron">
-	<center>
-  <h1 class="display-5">New Location Coming Soon!</h1>
-  <p class="lead">Opening on the corner of Sea and Shell.</p> </center>
-  <div id="checkJS" class="alert alert-danger">
-	<h1> This website is best viewed with Javascript enabled </h1> 
-</div>
-</div>
-
-  <header>  <center> <h1> The Krusty Krab </h1> </center>  </header>
-  <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-		<script> function javascript_check() {document.getElementById("checkJS").className="javascript_enabled"}; </script>
- 
-
-<div class="container">
- <main>
- 
-
-   <hr />
-   <nav>
-    <ul class="nav nav-pills">
-	 <li class="nav-item"> <a class="nav-link"href="home.html">  <i class="fa fa-home"></i> </a> &nbsp; </li>
-     <li class="nav-item"><a class="nav-link active" href="menu.html">  Menu  </a> &nbsp; </li>
-     <li class="nav-item"> <a class="nav-link" href="contact.html">  Contact Us   </a> </li>
-	</ul>
-	</nav>
-   <hr />
-
-
-	<article>
-		<div class="row">
-		<div class="col-12">
-		<center> <h3> Pattys: </h3> </center> <br/>
-		</div>
-		</div>
-		<div class="row">
-		<div class="col-lg-4 col-sm-6 col-xs-12">
-		<p> <strong> The Krabby Patty </strong> <br>
-		The one and only and never successfully copied Krabby Patty is 
-		made of 100% pure meat and other ingredients. Served on a sesame seed
-		bun, with lettuce, pickles, tomato, onion, ketchup, and secret formula, 
-		it is the best burger under the sea. <br>
-		<em> 2.00 </em> 
-		</p>
-		</div>
-		<div class="col-lg-4 col-sm-6 col-xs-12">
-		<p> <strong> Double Krabby Patty </strong> <br>
-		All the ingredients of a classic Krabby Patty, with twice the patty! <br>
-		<em> 3.00 </em> 
-		</p>
-		</div>
-		<div class="col-lg-4 col-sm-6 col-xs-12">
-		<p> <strong> The Jelly Patty </strong> <br>
-		The classic Krabby Patty, served with real, natural,
-		hand caught jellyfish jelly.<br>
-		<em> 3.00 </em> 
-		</p>
-		</div>
-		 <!-- This ends the row -->
-		
-		
-		<div class="col-lg-4 col-sm-6 col-xs-12">
-		<p> <strong> The Nasty Patty </strong> <br>
-		A Krabby Patty with volcano sauce, seahorse radish, toenail clippings, 
-		sprinkled with toilet water, and dried with Mr. Krabs's gym socks. <br>
-		<em> 4.00 </em>
-		</p>
-		</div>
-		<div class="col-lg-4 col-sm-6 col-xs-12">
-		<p> <strong> Double Triple Bossy Deluxe on a raft, 4x4 animal style,
-		extra shingles, with a shimmy and a squeeze,
-		light axle grease; make it cry, burn it, and let it swim </strong> <br>
-		Just as the name suggests, this burger has it all!
-		<br>
-		<em> 90.00 </em> 
-		</p>
-		</div>
-		<div class="col-lg-4 col-sm-6 col-xs-12">
-		<p> <strong> The Krusty Krab Pizza </strong> <br>
-		The Krusty Krab Pizza is the pizza for you and me. 
-		Made from real Krabby Pattys, each bite is packed with the flavor
-		of the original Krabby Patty. Ask about delivery!
-		<br>
-		<em> 6.00/small, 8.00/medium, 12.00/large </em> 
-		</p>
-		</div> <!-- This ends the last column element -->
-		</div> <!-- This ends the row element --> 
-	</article> <!-- This ends the article containing the Patty items --> 
-	
-	<article id="drinks">
-	<table class="table table-bordered table-striped table-hover"> 
-	<tr> 
-		<th colspan="2"> Beverages </th>
-	</tr>
-	<tr>
-		<td> Kelp Shake </td>
-		<td> 2.00 </td>
-	</tr>
-	<tr>
-		<td> Super Seaweed Shake </td>
-		<td> 2.50 </td>
-	</tr>
-	<tr>
-		<td> Kelp Tea </td>
-		<td> 1.50 </td>
-	</tr>
-	<tr>
-		<td> Seafoam Soda </td>
-		<td> 1.00/1.25/1.50 </td>
-	</tr>
-	<tr>
-		<td> Diet Shampoo </td>
-		<td> 2.00 </td>
-	</tr>
-	<tr>
-		<td> Water </td>
-		<td> 5.00 </td>
-	</tr>
-	</table>
-	</article>
-	
-  </main>
-</div>
-</body>
-
-<footer>
-  <p>
-
-    100 Shell Street, Bikini Bottom, The Pacific Ocean, 534 <br />
-    011-534-8818
-  </p>
-</footer>
+         font-weight: normal;
+         font-style: normal; }
+         h1, strong, .jumbotron {font-family: 'spongeboy_me_bobregular';}
+      </style>
+      <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- This provides the home button -->
+   </head>
+   <body onload="javascript_check()">
+      <div class="jumbotron">
+         <center>
+            <h1 class="display-5">New Location Coming Soon!</h1>
+            <p class="lead">Opening on the corner of Sea and Shell.</p>
+         </center>
+         <div id="checkJS" class="alert alert-danger">
+            <h1> This website is best viewed with Javascript enabled </h1>
+         </div>
+      </div>
+      <header>
+         <center>
+            <h1> The Krusty Krab </h1>
+         </center>
+      </header>
+      <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script> function javascript_check() {document.getElementById("checkJS").className="javascript_enabled"}; </script>
+      <div class="container">
+         <main>
+            <hr />
+            <nav>
+               <ul class="nav nav-pills">
+                  <li class="nav-item"> <a class="nav-link" href="home.html">  <i class="fa fa-home"></i> </a> &nbsp; </li>
+                  <li class="nav-item"><a class="nav-link active" href="menu.html">  Menu  </a> &nbsp; </li>
+                  <li class="nav-item"> <a class="nav-link" href="contact.html">  Contact Us   </a> </li>
+               </ul>
+            </nav>
+            <hr />
+            <article>
+               <div class="row">
+                  <div class="col-12">
+                     <center>
+                        <h3> Pattys: </h3>
+                     </center>
+                     <br/>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-4 col-sm-6 col-xs-12">
+                     <p> <strong> The Krabby Patty </strong> <br>
+                        The one and only and never successfully copied Krabby Patty is 
+                        made of 100% pure meat and other ingredients. Served on a sesame seed
+                        bun, with lettuce, pickles, tomato, onion, ketchup, and secret formula, 
+                        it is the best burger under the sea. <br>
+                        <em> 2.00 </em> 
+                     </p>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-xs-12">
+                     <p> <strong> Double Krabby Patty </strong> <br>
+                        All the ingredients of a classic Krabby Patty, with twice the patty! <br>
+                        <em> 3.00 </em> 
+                     </p>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-xs-12">
+                     <p> <strong> The Jelly Patty </strong> <br>
+                        The classic Krabby Patty, served with real, natural,
+                        hand caught jellyfish jelly.<br>
+                        <em> 3.00 </em> 
+                     </p>
+                  </div>
+                  <!-- This ends the row -->
+                  <div class="col-lg-4 col-sm-6 col-xs-12">
+                     <p> <strong> The Nasty Patty </strong> <br>
+                        A Krabby Patty with volcano sauce, seahorse radish, toenail clippings, 
+                        sprinkled with toilet water, and dried with Mr. Krabs's gym socks. <br>
+                        <em> 4.00 </em>
+                     </p>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-xs-12">
+                     <p> <strong> Double Triple Bossy Deluxe on a raft, 4x4 animal style,
+                        extra shingles, with a shimmy and a squeeze,
+                        light axle grease; make it cry, burn it, and let it swim </strong> <br>
+                        Just as the name suggests, this burger has it all!
+                        <br>
+                        <em> 90.00 </em> 
+                     </p>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-xs-12">
+                     <p> <strong> The Krusty Krab Pizza </strong> <br>
+                        The Krusty Krab Pizza is the pizza for you and me. 
+                        Made from real Krabby Pattys, each bite is packed with the flavor
+                        of the original Krabby Patty. Ask about delivery!
+                        <br>
+                        <em> 6.00/small, 8.00/medium, 12.00/large </em> 
+                     </p>
+                  </div>
+                  <!-- This ends the last column element -->
+               </div>
+               <!-- This ends the row element --> 
+            </article>
+            <!-- This ends the article containing the Patty items --> 
+            <article id="drinks">
+               <table class="table table-bordered table-striped table-hover">
+                  <tr>
+                     <th colspan="2"> Beverages </th>
+                  </tr>
+                  <tr>
+                     <td> Kelp Shake </td>
+                     <td> 2.00 </td>
+                  </tr>
+                  <tr>
+                     <td> Super Seaweed Shake </td>
+                     <td> 2.50 </td>
+                  </tr>
+                  <tr>
+                     <td> Kelp Tea </td>
+                     <td> 1.50 </td>
+                  </tr>
+                  <tr>
+                     <td> Seafoam Soda </td>
+                     <td> 1.00/1.25/1.50 </td>
+                  </tr>
+                  <tr>
+                     <td> Diet Shampoo </td>
+                     <td> 2.00 </td>
+                  </tr>
+                  <tr>
+                     <td> Water </td>
+                     <td> 5.00 </td>
+                  </tr>
+               </table>
+            </article>
+         </main>
+      </div>
+      <footer>
+         <p>
+            100 Shell Street, Bikini Bottom, The Pacific Ocean, 534 <br />
+            011-534-8818
+         </p>
+      </footer>
+   </body>
 </html>
-

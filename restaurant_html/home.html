@@ -1,117 +1,117 @@
 <!DOCTYPE html>
 <!-- Name: Oliver Lee
-Date Created: 1/7/2019
-Most recent revision: 1/7/2019 -->
+   Date Created: 1/7/2019
+   Most recent revision: 1/20/2019 -->
 <html lang="en">
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width = device-width, initial-scale = 1">
-<title> Home Page </title>   
-<style>
-
-.jumbotron { background-image: url("images/spongeSky.jpg");
-				background-size: cover;}
-.javascript_enabled { Display: none;}
-@font-face {
-    font-family: 'spongeboy_me_bobregular';
-    src: url('fonts/spongeboy-webfont.woff2') format('woff2'),
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width = device-width, initial-scale = 1">
+      <title> Home Page </title>
+      <style>
+         .jumbotron { background-image: url("images/spongeSky.jpg");
+         background-size: cover;}
+         .javascript_enabled { Display: none;}
+         @font-face {
+         font-family: 'spongeboy_me_bobregular';
+         src: url('fonts/spongeboy-webfont.woff2') format('woff2'),
          url('fonts/spongeboy-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal; }
-body, h1, strong, h2, h3, .jumbotron {font-family: 'spongeboy_me_bobregular', arial;}
-</style>  
-<!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
-	<link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!-- This provides the home button -->
-</head>
-
-<body onload="javascript_check()">
-<div class="jumbotron">
-	<center>
-  <h1 class="display-5">New Location Coming Soon!</h1>
-  <p class="lead">Opening on the corner of Sea and Shell.</p> </center>
-  <div id="checkJS" class="alert alert-danger">
-	<h1> This website is best viewed with Javascript enabled </h1> 
-</div>
-</div>
-
-  <div class="page-header">  <center> <h1> The Krusty Krab </h1> </center>  </div>
-	 <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-		<script> function javascript_check() {document.getElementById("checkJS").className="javascript_enabled"}; </script>
- <main>
- 
- <div class="container">
- 
-   <hr />
-   <nav>
-    <ul class="nav nav-pills">
-	 <li class="nav-item"> <a class="nav-link active"href="home.html">  <i class="fa fa-home"></i> </a> </li>
-     <li class="nav-item"><a class="nav-link" href="menu.html">  Menu  </a> &nbsp; </li>
-     <li class="nav-item"> <a class="nav-link" href="contact.html">  Contact Us   </a> </li>
-	</ul>
-	
-   </nav>
-   <hr />
-   <div class="col-lg-12">
-   <center><img src="images/krustykrab.png" class="img-responsive" alt="A photo of the Krusty Krab"  width="400" height="150"> </center>
-   </div>
-   <article>
-     <p>
-       <strong>Restaurant Description </strong> <br />
-       The Krusty Krab is a renowned local dining destination, 
-	   and home of the one and only Krabby Patty. 
-	   All food is cooked to order and never frozen!
-	   A much better alternative to the chumbucket, an awful restaurant 
-	   that doesn't even have it's own original recipes.
-	   The Krusty Krab was founded in 1905 when founder Eugene Krabs bought
-	   the retirement home the Rusty Krab, and rebranded it as a high quality 
-	   fast food restaurant. The Krusty Krab is clean and disease free. 
-	   The Krusty Krab supports local artists, and has featured local artists,
-	   that have been studying the clarinet and mopping for years.
-	   
-	   
-		<div id="carousel" class="carousel slide" data-ride="carousel">
-	  <div class="carousel-inner">
-		<div class="carousel-item active">
-		  <center><h3> New Location Coming Soon!</h3>
-		  <img class="Responsive image" src="images/newLocation.png" alt="First slide"></center>
-		</div>
-		<div class="carousel-item">
-		  <center> <h3> Try Our Seasonsal Seanut Brittle! </h3>
-		  <img class="Responsive image" src="images/seanutBrittle.jpg" alt="Second slide"> </center>
-		</div>
-		<div class="carousel-item">
-		  <center><h3> Drink of the Month: Kelp Shake! </h3>
-		  <img class="Responsive image" src="images/kelpShake.png" alt="Third slide"></center>
-		</div>
-	  </div>
-	  <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		<span class="sr-only">Previous</span>
-	  </a>
-	  <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-		<span class="carousel-control-next-icon" aria-hidden="true"></span>
-		<span class="sr-only">Next</span>
-	  </a>
-	</div>
-
- </div> <!-- This ends the container element -->
- </div>
- </main>
- </body>
-
-<footer>
-  <p>
-    100 Shell Street, Bikini Bottom, The Pacific Ocean, 534 <br />
-    011-534-8818
-  </p>
-</footer>
-
+         font-weight: normal;
+         font-style: normal; }
+         body, h1, strong, h2, h3, .jumbotron {font-family: 'spongeboy_me_bobregular', arial;}
+      </style>
+      <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- This provides the home button -->
+   </head>
+   <body onload="javascript_check()">
+      <div class="jumbotron">
+         <center>
+            <h1 class="display-5">New Location Coming Soon!</h1>
+            <p class="lead">Opening on the corner of Sea and Shell.</p>
+         </center>
+         <div id="checkJS" class="alert alert-danger">
+            <h1> This website is best viewed with Javascript enabled </h1>
+         </div>
+      </div>
+      <div class="page-header">
+         <center>
+            <h1> The Krusty Krab </h1>
+         </center>
+      </div>
+      <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script> function javascript_check() {document.getElementById("checkJS").className="javascript_enabled"}; </script>
+      <main>
+         <div class="container">
+            <hr />
+            <nav>
+               <ul class="nav nav-pills">
+                  <li class="nav-item"> <a class="nav-link active" href="home.html">  <i class="fa fa-home"></i> </a> </li>
+                  <li class="nav-item"><a class="nav-link" href="menu.html">  Menu  </a> &nbsp; </li>
+                  <li class="nav-item"> <a class="nav-link" href="contact.html">  Contact Us   </a> </li>
+               </ul>
+            </nav>
+            <hr />
+            <div class="col-lg-12">
+               <center><img src="images/krustykrab.png" class="img-responsive" alt="A photo of the Krusty Krab"  width="400" height="150"> </center>
+            </div>
+            <article>
+               <p>
+                  <strong>Restaurant Description </strong> <br />
+                  The Krusty Krab is a renowned local dining destination, 
+                  and home of the one and only Krabby Patty. 
+                  All food is cooked to order and never frozen!
+                  A much better alternative to the chumbucket, an awful restaurant 
+                  that doesn't even have it's own original recipes.
+                  The Krusty Krab was founded in 1905 when founder Eugene Krabs bought
+                  the retirement home the Rusty Krab, and rebranded it as a high quality 
+                  fast food restaurant. The Krusty Krab is clean and disease free. 
+                  The Krusty Krab supports local artists, and has featured local artists,
+                  that have been studying the clarinet and mopping for years. 
+               </p>
+            </article>
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <center>
+                        <h3> New Location Coming Soon!</h3>
+                        <img class="Responsive image" src="images/newLocation.png" alt="First slide">
+                     </center>
+                  </div>
+                  <div class="carousel-item">
+                     <center>
+                        <h3> Try Our Seasonsal Seanut Brittle! </h3>
+                        <img class="Responsive image" src="images/seanutBrittle.jpg" alt="Second slide"> 
+                     </center>
+                  </div>
+                  <div class="carousel-item">
+                     <center>
+                        <h3> Drink of the Month: Kelp Shake! </h3>
+                        <img class="Responsive image" src="images/kelpShake.png" alt="Third slide">
+                     </center>
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="sr-only">Previous</span>
+               </a>
+               <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="sr-only">Next</span>
+               </a>
+            </div>
+         </div>
+         <!-- This ends the container element -->
+      </main>
+      <footer>
+         <p>
+            100 Shell Street, Bikini Bottom, The Pacific Ocean, 534 <br />
+            011-534-8818
+         </p>
+      </footer>
+   </body>
 </html>
-
-
